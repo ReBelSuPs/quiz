@@ -17,7 +17,7 @@ body {
 }
 .container {
   max-width: 800px;
-  width: 80%;
+  width: 95%;
   margin: auto;
   font-family: 'Cairo', sans-serif;
   background-color: #303960;
@@ -82,4 +82,35 @@ h4 {
 .btn:hover {
   border-color: #ea9a96;
   background-color: #ea9a96;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 11px;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  .container > h4 {
+    margin-right: 0.8em;
+  }
+  .checkbox {
+    margin-bottom: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  html {
+    font-size: 9px;
+  }
+  .container {
+    width: 100%;
+    padding: 1em;
+  }
 }
