@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   height: 100vh;
   padding: 0;
@@ -25,14 +29,15 @@ body {
 
 .container > h4 {
   text-align: right;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-right: 2em;
 }
 #score {
+  font-size: 2.1rem;
   font-family: consolas, monospace;
 }
 h3 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h4 {
@@ -48,9 +53,9 @@ h4 {
 }
 .opt {
   cursor: pointer;
-  padding: 0.8em;
+  padding: 0.5em 0.8em;
   border-radius: 5px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ea9a96;
   transition: background-color 0.1s ease;
 }
@@ -70,7 +75,7 @@ h4 {
   background-color: transparent;
   padding: 0.5px 3em;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   transition: background-color 0.25s ease-in-out;
 }
 
