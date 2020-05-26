@@ -76,12 +76,9 @@ const displaySummary = () => {
 };
 
 const grabData = async () => {
-  const result = await fetch('https://opentdb.com/api.php?amount=10', {
-    mode: 'cors',
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-    },
-  }).then((res) => res.json());
+  const result = await fetch(
+    'https://cross-origin.herokuapp.com/https://opentdb.com/api.php?amount=10'
+  ).then((res) => res.json());
   const datas = result.results;
   let i = 0;
   for (const data of datas) {
