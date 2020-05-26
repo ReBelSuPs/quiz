@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <h4>Score: <span id="score">0</span></h4>
+      <h3 id="question" class="question"></h3>
+      <div id="warning"></div>
+      <div class="answers">
+        <div class="checkbox">
+          <h4 class="opt" id="opt1"></h4>
+        </div>
+        <div class="checkbox">
+          <h4 class="opt" id="opt2"></h4>
+        </div>
+        <div class="checkbox">
+          <h4 class="opt" id="opt3"></h4>
+        </div>
+        <div class="checkbox">
+          <h4 class="opt" id="opt4"></h4>
+        </div>
+
+        <!-- Disabled -->
+        <div class="checkbox disabled">
+          <h4 class="opt" id="opt4"></h4>
+        </div>
+        <div class="checkbox disabled">
+          <h4 class="opt" id="opt4"></h4>
+        </div>
+        <div class="checkbox disabled">
+          <h4 class="opt" id="opt4"></h4>
+        </div>
+        <div class="checkbox disabled">
+          <h4 class="opt" id="opt4"></h4>
+        </div>
+        <div class="checkbox disabled">
+          <h4 class="opt" id="opt4"></h4>
+        </div>
+        <div class="checkbox disabled">
+          <h4 class="opt" id="opt4"></h4>
+        </div>
+        <!-- =========================================== -->
+      </div>
+      <button id="checkBtn" class="btn">Check</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
