@@ -56,6 +56,7 @@ const updateScore = (mark) => {
 const removeSelected = () => {
   options.forEach((opt) => {
     opt.classList.remove('selected');
+    opt.textContent = '';
   });
 };
 
