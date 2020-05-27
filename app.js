@@ -68,6 +68,7 @@ const displaySummary = () => {
     const { selected, correctAns } = answersReport[i];
     const { question } = questionsInfo[i];
     optElm.classList.add('no-effect');
+    optElm.classList.add('selected');
     optElm.style.cursor = 'default';
     optElm.innerHTML = `Q${i + 1}. ${question} <br> Selected :- ${selected.join(
       ', '
