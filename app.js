@@ -67,6 +67,7 @@ const displaySummary = () => {
   options.forEach((optElm) => {
     const { selected, correctAns } = answersReport[i];
     const { question } = questionsInfo[i];
+    optElm.classList.add('no-effect');
     optElm.style.cursor = 'default';
     optElm.innerHTML = `Q${i + 1}. ${question} <br> Selected :- ${selected.join(
       ', '
@@ -81,10 +82,10 @@ const grabData = async () => {
   ).then((res) => res.json());
   const datas = result.results;
   let i = 0;
-  for (const data of datas) {
+  datas.forEach((data) => {
     questionsInfo[i] = data;
     i++;
-  }
+  });
 };
 
 grabData().then((datas) => {
@@ -106,6 +107,8 @@ grabData().then((datas) => {
 
 options.forEach((opt) => {
   opt.addEventListener('click', () => {
-    opt.classList.add('selected');
+    if (!opt.classList.contains('no-effect')) {
+      opt.classList.toggle('selected');
+    }
   });
 });

@@ -60,7 +60,6 @@ h4 {
   transition: background-color 0.1s ease;
 }
 
-.checkbox:hover > .opt,
 .opt.selected {
   background-color: #e5e5e5;
   color: #303960;
